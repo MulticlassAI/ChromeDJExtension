@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Music Player Controller",
+  "version": "1.0",
+  "description": "Control music players with keyboard shortcuts - Ctrl+F to fast forward through songs, Ctrl+←/→ for track navigation. Supports SoundCloud, YouTube Music, and more.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "fast-forward": {
+      "suggested_key": {
+        "default": "Ctrl+F",
+        "mac": "Command+F"
+      },
+      "description": "Fast forward through song (25% → 50% → 75% → 100%)"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.soundcloud.com/*",
+        "*://music.youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://open.spotify.com/*"
+      ],
+      "js": [
+        "src/core/base-controller.js",
+        "src/platforms/soundcloud.js",
+        "src/platforms/youtube-music.js",
+        "src/platforms/spotify.js",
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/core/*", "src/platforms/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

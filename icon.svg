@@ -1,0 +1,11 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" fill="#ff5500"/>
+  <g fill="white">
+    <!-- Music note -->
+    <ellipse cx="45" cy="75" rx="12" ry="8"/>
+    <rect x="55" y="35" width="4" height="40"/>
+    <path d="M59 35 L80 45 L80 65 L59 55 Z"/>
+    <!-- Small "H" to indicate the hotkey -->
+    <text x="85" y="100" font-family="Arial, sans-serif" font-size="20" font-weight="bold">H</text>
+  </g>
+</svg>
