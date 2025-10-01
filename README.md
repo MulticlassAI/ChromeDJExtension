@@ -24,10 +24,6 @@ This extension adds **instant track navigation** to web music players, allowing 
 
 ## ⌨️ Keyboard Shortcuts
 
-### Track Navigation
-- **`^ + Shift + ←`** - **Previous track**
-- **`^ + Shift + →`** - **Next track**
-
 ### Fast Forward
 - **`^ + F`** - **Fast forward** through song (cycles: 25% → 50% → 75% → 100% → repeat)
 
@@ -67,7 +63,6 @@ This extension adds **instant track navigation** to web music players, allowing 
    - Visit SoundCloud, YouTube Music, or Spotify
    - Play any track
    - Use `^ + F` to fast forward through sections
-   - Use `^ + Shift + ←/→` to navigate tracks
 
 ### Chrome Web Store
 ## 🎛️ How to Use
@@ -75,8 +70,6 @@ This extension adds **instant track navigation** to web music players, allowing 
 1. **Open** SoundCloud, YouTube Music, or Spotify in Chrome
 2. **Play any track** you want to preview
 3. **Use keyboard shortcuts** to navigate:
-   - `^ + Shift + ←` → Previous track
-   - `^ + Shift + →` → Next track
    - `^ + F` → Fast forward (1st press: 25%, 2nd: 50%, 3rd: 75%, 4th: 100%, then repeats)
 4. **See instant feedback** showing where you jumped to
 5. **Repeat** for rapid track evaluation
